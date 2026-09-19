@@ -1,0 +1,24 @@
+[package]
+name = "portwait"
+version = "0.1.0"
+edition = "2021"
+description = "Block until a TCP port or an HTTP health check is actually ready, then optionally exec a command"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/portwait"
+readme = "README.md"
+keywords = ["wait-for-it", "healthcheck", "startup", "docker-compose", "cli"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "portwait"
+path = "src/lib.rs"
+
+[[bin]]
+name = "portwait"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+ureq = "2"
