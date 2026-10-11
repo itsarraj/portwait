@@ -26,6 +26,12 @@ portwait:   attempt 1: got status 503, want 200
 portwait: http http://127.0.0.1:49319/healthz ready after 1.76s (8 attempts)
 ```
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
